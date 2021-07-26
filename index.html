@@ -10,7 +10,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Easybank landing page</title>
-  <link rel="stylesheet" href="./app/scss/style.css">
+  <link rel="stylesheet" href="./.dist/css/style.css">
   
 </head>
 <body>
@@ -24,22 +24,18 @@
               <img src="/images/logo.svg" alt="logo">
             </a>
         
-            <a href="" class="header__menu">
+            <a href="" class="header__menu hide__for__desktop">
                 <span></span>
                 <span></span>
                 <span></span>
               </a>
               
-            <div class="header__links">
-              <a href="#">Home</a>
-              <a href="#">About</a>
-              <a href="#">Contact</a>
-              <a href="#">Blog</a>
-              <a href="#">Careers</a>
+            <div class="header__links hide__for__mobile">
+              <a href="#">Home</a><a href="#">About</a><a href="#">Contact</a><a href="#">Blog</a><a href="#">Careers</a>
 
             </div>
             
-            <a href="#" class="button header__cta">Request Invite</a>
+            <a href="#" class="button header__cta hide__for__mobile">Request Invite</a>
         
           </nav>
         

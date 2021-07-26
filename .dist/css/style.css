@@ -50,7 +50,7 @@ a, a:hover, a:visited {
 }
 
 .button {
-  padding: 1rem 1.875rem;
+  padding: 0.875rem 2.1875rem;
   border-radius: 50px;
   cursor: pointer;
   background-image: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
@@ -58,8 +58,25 @@ a, a:hover, a:visited {
   border: 0px;
 }
 
+@media (max-width: 63.9375em) {
+  .hide__for__mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 64em) {
+  .hide__for__desktop {
+    display: none;
+  }
+}
+
 .header nav {
   padding: 25px;
+}
+
+.header__logo img {
+  width: 141px;
+  height: 22px;
 }
 
 .header__menu > span {
@@ -76,6 +93,10 @@ a, a:hover, a:visited {
 .header__links a {
   font-size: 0.875rem;
   color: #9698a6;
+}
+
+.header__links a:not(:last-child) {
+  margin-right: 32px;
 }
 
 .header__cta {
